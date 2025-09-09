@@ -1,0 +1,21 @@
+module,attribute name,description of the attribute,critical data element (Yes/no),field type,possible values,value/data source,business entity name,Ui screen/ section,UI attribute name
+Customer,Customer_ID,Unique identifier assigned to each customer,Yes,String,Alphanumeric ID,Core Banking System,Customer,Profile,Customer ID
+Customer,Customer_Name,Full legal name of the customer,Yes,String,Alphabetic with spaces,CRM,Customer,Profile,Customer Name
+Account,Account_Number,Unique number assigned to a customer account,Yes,String,10-16 digit numeric,Core Banking System,Account,Accounts,Account Number
+Account,Account_Type,Type of account maintained by the customer,No,String,"Savings, Current, Fixed Deposit",Core Banking System,Account,Accounts,Account Type
+Loan,Loan_ID,Unique loan identifier,Yes,String,Auto-generated,Loan Management System,Loan,Loans,Loan ID
+Loan,Loan_Amount,The principal loan amount sanctioned,Yes,Decimal,Positive numbers,Loan Management System,Loan,Loans,Loan Amount
+Loan,Interest_Rate,Interest rate applied to loan,No,Decimal,0-20%,Loan Management System,Loan,Loans,Interest Rate
+Transaction,Transaction_ID,Unique identifier for a transaction,Yes,String,Auto-generated,Core Banking System,Transaction,Transactions,Transaction ID
+Transaction,Transaction_Date,Date of transaction execution,Yes,Date,YYYY-MM-DD,Core Banking System,Transaction,Transactions,Transaction Date
+Transaction,Transaction_Amount,Amount transacted in INR,Yes,Decimal,Positive values,Core Banking System,Transaction,Transactions,Transaction Amount
+CreditCard,Card_Number,16-digit number assigned to credit card,Yes,String,16-digit numeric,Credit Card System,Card,Cards,Card Number
+CreditCard,Credit_Limit,Maximum limit on the credit card,No,Decimal,50k-5L,Credit Card System,Card,Cards,Card Limit
+CreditCard,Card_Status,Status of the credit card,No,String,"Active, Blocked, Expired",Credit Card System,Card,Cards,Card Status
+Branch,Branch_ID,Unique identifier for branch,Yes,String,Alphanumeric,Core Banking System,Branch,Profile,Branch ID
+Branch,Branch_Name,Name of the branch,No,String,Alphabetic,Core Banking System,Branch,Profile,Branch Name
+Customer,Mobile_Number,Registered mobile number of the customer,Yes,String,10-digit number,CRM,Customer,Profile,Mobile Number
+Customer,Email_ID,Registered email address of the customer,No,String,Valid email format,CRM,Customer,Profile,Email ID
+Loan,Repayment_Term,Tenure of loan repayment,Yes,Integer,"Months (12, 24, 36...)",Loan Management System,Loan,Loans,Repayment Term
+Transaction,Payment_Mode,Mode of payment used in transaction,No,String,"NEFT, UPI, IMPS, Cash",Core Banking System,Transaction,Transactions,Payment Mode
+CreditCard,Card_Expiry,Expiry date of credit card,Yes,Date,MM-YYYY,Credit Card System,Card,Cards,Card Expiry

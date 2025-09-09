@@ -1,0 +1,21 @@
+TDM Attribute Record,attribute name,object being described,description of the attribute,attribute type,rationale for inclusion,process prerequisite
+TDM_001,Customer_ID,Customer,Primary key to identify a customer in TDM,Identifier,Regulatory compliance,KYC Verified
+TDM_002,Customer_Name,Customer,Full name stored for reporting & AML,Descriptive,Audit requirement,KYC Verified
+TDM_003,Account_Number,Account,Unique number associated with account in TDM,Identifier,Operational need,Active Account
+TDM_004,Account_Type,Account,Classification of account type,Descriptive,Operational need,Active Account
+TDM_005,Loan_ID,Loan,Unique loan number for monitoring,Identifier,Risk assessment,Approved Loan
+TDM_006,Loan_Amount,Loan,Sanctioned amount for loan stored in TDM,Numeric,Risk assessment,Approved Loan
+TDM_007,Interest_Rate,Loan,Rate of interest applied on loan,Numeric,Regulatory compliance,Approved Loan
+TDM_008,Transaction_ID,Transaction,Reference number for transaction tracking,Identifier,Operational need,None
+TDM_009,Transaction_Date,Transaction,Execution date of transaction,Date,Audit requirement,None
+TDM_010,Transaction_Amount,Transaction,Amount transferred in transaction,Numeric,Risk assessment,None
+TDM_011,Card_Number,CreditCard,Unique number for card validation,Identifier,Regulatory compliance,Active Account
+TDM_012,Card_Status,CreditCard,Status of issued credit card,Descriptive,Operational need,Active Account
+TDM_013,Card_Expiry,CreditCard,Expiry date of credit card,Date,Regulatory compliance,Active Account
+TDM_014,Branch_ID,Branch,Unique identifier of bank branch,Identifier,Operational need,None
+TDM_015,Branch_Name,Branch,Name of branch for reporting,Descriptive,Audit requirement,None
+TDM_016,Mobile_Number,Customer,Mobile number for alerts and verification,Identifier,Operational need,KYC Verified
+TDM_017,Email_ID,Customer,Email address for digital communication,Descriptive,Operational need,KYC Verified
+TDM_018,Repayment_Term,Loan,Number of months for repayment,Numeric,Risk assessment,Approved Loan
+TDM_019,Payment_Mode,Transaction,Mode of payment used,Descriptive,Operational need,None
+TDM_020,IFSC_Code,Branch,Unique IFSC code for branch,Identifier,Regulatory compliance,None
